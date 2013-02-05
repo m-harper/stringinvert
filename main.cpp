@@ -27,6 +27,7 @@ int main(int argc, char* argv[]) {
 		
 		if (child_process == (pid_t) 0) {
 			// This process is a child process
+			// Print the end char - index
 			cerr << string_to_invert[string_to_invert.length() - 1 - index];
 			continue; // Skip to the next for-loop iteration
 		}
