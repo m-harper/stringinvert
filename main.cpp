@@ -19,6 +19,10 @@ string parse_args(int, char*[]);
 int main(int argc, char* argv[]) {
 	string string_to_invert = parse_args(argc, argv);
 
+	if (string_to_invert == "") {
+		return 1;
+	}
+
 	pid_t child_process = 0;
 	int index;
 
